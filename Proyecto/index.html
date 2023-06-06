@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Iniciar Sesión</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    
+    <form action="/Proyecto/login.php" method="POST">
+        <div>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="user" required>
+        </div>
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="pswd" required>
+        </div>
+        <div>
+            <input type="submit" name="submit" value="Iniciar Sesión">
+        </div>
+    </form>
+</body>
+</html>
