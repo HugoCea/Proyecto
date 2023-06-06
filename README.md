@@ -14,7 +14,7 @@ todas las funciones en un unico archivo.
 
 De todas formas se usa un archivo adicional, para crear carpetas create_folder.php
 
-
+**Todas las funciones y acciones que realizan los archivos están comentadas en el propio código**
 
 
 
