@@ -177,16 +177,10 @@ if (isset($_FILES['file'])) {
 
     // Mensaje de éxito
     echo "<p class='success'>Archivo subido exitosamente.</p>";
-	echo $currentPath. '<br>';
-	echo $uploadPath. '<br>';
     // Redireccionar a la página principal
     header("Refresh: 3; url=/Proyecto/index.php");
     exit();
 }
-	echo $currentDirectory . '<br>';
-	echo $folderPath . '<br>';
-	echo $basePath. '<br>';
-	echo $currentPath. '<br>';
     // Obtener la ruta actual
     $currentPath = isset($_GET['path']) ? $_GET['path'] : '';
     
