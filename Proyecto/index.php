@@ -159,7 +159,7 @@ $basePath = 'C:/xampp/htdocs';
 $sharedFolder = '/NAS';
 $folderPath = $basePath . '/NAS'; // Ruta de la carpeta a compartir
 // Obtener el directorio actual basado en la URL
-$currentDirectory = isset($_GET['path']) ? urldecode($_GET['path']) : '/Viper';
+$currentDirectory = isset($_GET['path']) ? urldecode($_GET['path']) : '';
 
 // Ruta completa de la carpeta actual
 $currentPath = $basePath . $sharedFolder . $currentDirectory;
